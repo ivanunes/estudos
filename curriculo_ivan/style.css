@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+
+#conteudo{
+    background-color: white;
+    box-sizing: border-box;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 100px;
+}
+
+#dive{
+    width: 170px;
+    height: 302px;
+    display: inline-block;
+}
+
+#foto{
+    width: 170px;
+    height: 302px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10%;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#texto{
+    width: 600px;
+    display: inline-block;
+}
+
+h1{
+    font-family: Tahoma;
+    font-weight: 600;
+}
+
+h2{
+    font-family: tahoma;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.exp{
+    padding-top: 10px;
+}
+
+p{
+    padding-left: 20px;
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(66, 196, 66);
+}
+
+#quali{
+    list-style-type: disc;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
