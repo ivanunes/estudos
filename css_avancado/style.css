@@ -1,0 +1,24 @@
+h1::first-letter{
+    color: red;
+    font-size: 4rem;
+}
+
+p::first-line{
+    color: red;
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    content: "";
+    background-image: url(../Assets/jureg-ladrao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+}
