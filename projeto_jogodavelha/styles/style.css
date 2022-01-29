@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 body{
     text-align: center;
+    background-image: linear-gradient(to left,#000000 ,#7c7c7c);
 }
 
-h1, h2{
-    font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3{
+    font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 h3{
     display: none;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: black;
+    color: white;
 }
 
 .jogador1, .jogador2{
@@ -20,8 +32,9 @@ h3{
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: beige;
-    border: 1px solid gray;
+    background-color: cblack;
+    border: 2px solid white;
+    border-radius: 10%;
 }
 
 .o{
