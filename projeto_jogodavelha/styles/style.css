@@ -4,7 +4,7 @@ body{
     background-image: linear-gradient(to left,#000000 ,#7c7c7c);
 }
 
-h1, h2, h3{
+h1, h2, h3, input{
     font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -16,6 +16,7 @@ h3{
 }
 
 input{
+    font-size: 20px;
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
