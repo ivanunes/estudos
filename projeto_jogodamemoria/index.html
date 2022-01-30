@@ -11,17 +11,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="" class="card" data-icon="bootstrap">
-        <div class="card_front">
-            <img class="icon" src="./Assets/bootstrap.png" alt="">
+    <div id="gameBoard">
+        <!-- <div id="" class="card" data-icon="bootstrap">
+            <div class="card_front">
+                <img class="icon" src="./Assets/bootstrap.png" alt="">
+            </div>
+            <div class="card_back">
+                &lt/&gt
+            </div>
+        </div> -->
+    </div>
+    
+
+    <div id="gameOver">
+        <div>
+            Parabéns, você completou o jogo!
         </div>
-        <div class="card_back">
-            &lt/&gt
-        </div>
+        <button id="restart" onclick="restart()">Jogue novamente</button>
     </div>
 
     
-
+    <script src="./scripts/game.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
