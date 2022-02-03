@@ -4,12 +4,14 @@ let vez = 0;
 let operadores = ["+", "-"]
 let ligado = false;
 
-function desligar(){
+function desligar() {
     ligado = false;
-    resultado;
+    resultado = [];
+    vez = 0;
+    hud.innerHTML = resultado;
 }
 
-function ligar(){
+function ligar() {
     ligado = true;
 }
 
@@ -25,13 +27,24 @@ function memoria(otNum) {
 
     console.log(resultado);
 
-    solucao();
     vez++;
 }
 
 function solucao() {
-    for (rest of resultado){
-        console.log(rest);
-    }
+    let vez1 = 0;
+
+    resultado.forEach(element => {
+        let h = eval(resultado[vez1].toString);
+
+        console.log(resultado);
+
+        vez++;
+    });
+
+
+
+
+
+
 }
 
