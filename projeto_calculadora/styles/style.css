@@ -46,6 +46,7 @@ body{
     appearance: textfield;
     padding-right: 10px;
     box-sizing: border-box;
+    overflow:hidden;
 }
 
 #tela::-webkit-inner-spin-button { 
