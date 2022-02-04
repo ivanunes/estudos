@@ -20,6 +20,13 @@ function ligar() {
     }
 }
 
+function arredondar(){
+    if (resultValor != 0){
+        Math.round(resultValor);
+        hud.innerHTML = Math.round(resultValor);
+    }
+}
+
 function limparTudo() {
     resultado = ['', '', '', '', '', '', '', '', '', ''];
     vez = 0;
@@ -28,7 +35,7 @@ function limparTudo() {
 }
 
 function mostrar(num) {
-    if (resultado.length != 10 || ligado != false) {
+    if (resultado.length <= 10 && ligado == true) {
         hud.innerHTML += num.value;
         memoria(num.value);
     }
@@ -42,7 +49,9 @@ function memoria(otNum) {
     vez++;
 }
 
-podeSeguir = false;
+let podeSeguir = true;
+let meteBala = true;
+let resultValor = 0;
 
 function solucao() {
     let num1 = resultado[0];
@@ -56,7 +65,7 @@ function solucao() {
     let num9 = resultado[8];
     let num10 = resultado[9];
 
-    num1 == "%" ? num1 = "0" : resultado[0];
+    num1 == "%" ? hud.innerHTML = "error" : resultado[0];
     num2 == "%" ? num2 = "/ 100 *" : resultado[1], podeSeguir = true;;
     num3 == "%" ? num3 = "/ 100 *" : resultado[2], podeSeguir = true;;
     num4 == "%" ? num4 = "/ 100 *" : resultado[3], podeSeguir = true;;
@@ -67,28 +76,34 @@ function solucao() {
     num9 == "%" ? num9 = "/ 100 *" : resultado[8], podeSeguir = true;;
     num10 =="%" ? num10 = "/ 100 *" : resultado[9], podeSeguir = true;;
 
-    if (podeSeguir == true){
-        hud.innerHTML = parseFloat(eval(num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10));
+    if (num1 == "√") {
+        resultValor = Math.sqrt(parseFloat(eval(num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10))) 
+        hud.innerHTML = resultValor;
+        ligado=false;
+        meteBala=false;
+     }else{ 
+         resultado[0];
+    }
+    num2 == "√" ? hud.innerHTML = "error" : resultado[1], podeSeguir = true;;
+    num3 == "√" ? hud.innerHTML = "error" : resultado[2], podeSeguir = true;;
+    num4 == "√" ? hud.innerHTML = "error" : resultado[3], podeSeguir = true;;
+    num5 == "√" ? hud.innerHTML = "error" : resultado[4], podeSeguir = true;;
+    num6 == "√" ? hud.innerHTML = "error" : resultado[5], podeSeguir = true;;
+    num7 == "√" ? hud.innerHTML = "error" : resultado[6], podeSeguir = true;;
+    num8 == "√" ? hud.innerHTML = "error" : resultado[7], podeSeguir = true;;
+    num9 == "√" ? hud.innerHTML = "error" : resultado[8], podeSeguir = true;;
+    num10 =="√" ? hud.innerHTML = "error" : resultado[9], podeSeguir = true;;
+
+    if (podeSeguir == true && meteBala == true){
+         resultValor = parseFloat(eval(num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10));
+         hud.innerHTML = resultValor;
     }
     
 
     ligado = false;
 }
 
-raiz(50);
-raiz(3);
-
 function raiz(number){
-    let contador = number;
-    let subt = 1;
-    let raizQ = 0;
 
-    while(!contador == 00){
-        contador -= subt;
-        subt += 2;
-        raizQ++;
-    }
-
-    console.log(raizQ);
+    console.log(Math.sqrt(number));
 }
-
