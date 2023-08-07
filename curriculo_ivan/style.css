@@ -63,7 +63,15 @@ a{
     color: rgb(66, 196, 66);
 }
 
-#quali{
+.quali{
     list-style-type: disc;
-    padding-left: 50px;
+    padding-left: 50px;   
+}
+
+#extra{
+    list-style:disc;
+}
+
+#final{
+    padding-bottom: 100px;
 }
