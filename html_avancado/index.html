@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Avançado</title>
+
+    <style>
+        #album {
+            width: 300px;
+        }
+
+        #jureg {
+            width: 100%;
+        }
+
+        .container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .controle {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .btn {
+            position: relative;
+            width: 60px;
+            padding: 10px;
+            top: 100%;
+            transform: translateY(-100%)
+        }
+
+        .frame {
+            width: 500px;
+            height: 400px;
+        }
+
+        .tela{
+            background-color: bisque;
+            width: 500px;
+            height: 5px;
+            position: relative;
+        }
+
+        .quadrado{
+            background-color: red;
+            width: 20px;
+            height: 5px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video onmouseover="mostra()" id="video1" class="video" src="../Assets/SkaterXL.mp4"></video>
+
+        <div class="controle" onmouseout="esconde()">
+            <img class="btn" onclick="retroceder()" src="../Assets/back.png">
+            <img class="btn" onclick="avancar()" src="../Assets/foward.png">
+            <img class="btn" onclick="diminuir_vel()" src="../Assets/decrease.png">
+            <img class="btn" onclick="aumentar_vel()" src="../Assets/increase.png">
+            <img class="btn" onclick="play()" src="../Assets/play.png">
+            <img class="btn" onclick="stop()" src="../Assets/stop.png">
+        </div>
+    </div>
+
+    <div id="album">
+        <img id="jureg" src="../Assets/jureg.jpg" alt="jureg">
+    </div>
+
+    <div class="tela">
+        <div id="jogador" class="quadrado"></div>
+    </div>
+
+    <ul id="lista" data-num="10">
+    </ul>
+
+    <iframe class="frame" src="../projeto_churrascometro/index.html"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NvcQShOBcZo?rel=0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <audio id="music" controls>
+        <source src="../Assets/batida_eletronica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

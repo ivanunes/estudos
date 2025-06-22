@@ -18,3 +18,9 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - ✔️ CSS
 
 - ✔️ HTML
+
+<br>
+
+<ul> Pages:
+<li><a href="https://ivanunes.github.io/estudos/projeto_churrascometro/">Churrascômetro </a></li>
+</ul>

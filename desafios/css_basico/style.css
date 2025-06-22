@@ -1,0 +1,44 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+} 
+
+h1{
+    font-weight: 500;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#cartao{
+    background-image: url(../../Assets/backgorund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    padding: 1px 20px;
+    margin-top: 10%;
+    box-sizing: border-box;
+}
+
+li{ 
+    font-size: 20px;
+    list-style-position: outside;
+    width: 110px;
+    
+}
+
+#insta{
+    list-style-image: url(../../Assets/Insta.png);
+}
+
+#twitter{
+    list-style-image: url(../../Assets/Twitter.png);
+}
+
+#youtube{
+    list-style-image: url(../../Assets/Youtube.png);
+}

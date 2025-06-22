@@ -1,3 +1,5 @@
+<h2 align="center">Este repositório é um prototipo de estudo com diversos projetos!</h1>
+
 <h1 align="center">🌻 Estudos 🌻</h1>
 
 <p align="center">Este repositório serve para treinamento das tecnologias abordadas no curso <a href="https://programadorbr.com/?src=ytBFvalpen">Desenvolvimento Web Full Stack</a>.</p>
